@@ -10,6 +10,7 @@ HEADER_COLOR="#FF6B9D"
 ACCENT_COLOR="#C792EA"
 SUCCESS_COLOR="#C3E88D"
 ERROR_COLOR="#F07178"
+#TODO: add fuzzy search
 
 # Check if gum is installed
 if ! command -v gum &> /dev/null; then
