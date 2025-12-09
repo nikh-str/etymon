@@ -1,13 +1,13 @@
 [package]
 name = "etym"
-version = "0.0.8"
-edition = "2021"
 description = "Queries EtymOnline.com to look up etymologies for words"
 readme = "README.md"
 keywords = ["etymology", "linguistics", "cli"]
+version = "0.1.0"
+edition = "2024"
 
 [dependencies]
-anyhow = "1"
+anyhow = "1.0.100"
 clap = { version = "3", features = ["cargo"] }
 regex = "1"
 scraper = "0.15"

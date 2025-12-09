@@ -45,7 +45,7 @@ get_term_width() {
     fi
 }
 TERM_WIDTH=$(get_term_width)
-MAX_WIDTH=$((TERM_WIDTH > 60 ? 80 : TERM_WIDTH < 40 ? 40 : TERM_WIDTH))
+MAX_WIDTH=$((TERM_WIDTH > 60 ? 50 : TERM_WIDTH < 40 ? 40 : TERM_WIDTH))
 
 
 # Display welcome banner
@@ -71,9 +71,9 @@ while true; do
         --header.foreground "$ACCENT_COLOR" \
         --cursor.foreground "$SUCCESS_COLOR" \
         "🔍 Look up a word" \
-        "📜 Browse history" \
+        "⛬ Browse history" \
         "❓ Random word" \
-        "🚪 Exit")
+        "⼾ Exit")
 
     case "$MODE" in
         "🔍 Look up a word")
@@ -116,9 +116,9 @@ while true; do
                 gum style \
                     --border rounded \
                     --border-foreground "$HEADER_COLOR" \
-                    --width "$MAX_WIDTH" \
+                    --width 10 \
                     --padding "2 3" \
-                    --margin "1 0" \
+                    --margin "1 1" \
                     "$(cat "$TEMP_FILE")"
                 
                 # Save to history
@@ -251,6 +251,7 @@ while true; do
                     --border rounded \
                     --border-foreground "$HEADER_COLOR" \
                     --padding "2 3" \
+                    --width "$MAX_WIDTH"\
                     --margin "1 0" \
                     "$(cat "$TEMP_FILE")"
                 
