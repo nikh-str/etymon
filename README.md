@@ -21,3 +21,6 @@ TODO:
 - [ ] offline support?
 - [ ] faster fetch
 - [ ] multiple language support (databases??)
+
+
+<img src="https://img.shields.io/liberapay/receives/nikistr.svg?logo=liberapay">

@@ -45,7 +45,7 @@ get_term_width() {
     fi
 }
 TERM_WIDTH=$(get_term_width)
-MAX_WIDTH=$((TERM_WIDTH > 60 ? 50 : TERM_WIDTH < 40 ? 40 : TERM_WIDTH))
+MAX_WIDTH=$((TERM_WIDTH > 60 ? 70 : TERM_WIDTH < 40 ? 40 : TERM_WIDTH))
 
 
 # Display welcome banner
@@ -116,7 +116,7 @@ while true; do
                 gum style \
                     --border rounded \
                     --border-foreground "$HEADER_COLOR" \
-                    --width 10 \
+                    --width "$MAX_WIDTH" \
                     --padding "2 3" \
                     --margin "1 1" \
                     "$(cat "$TEMP_FILE")"
