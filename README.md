@@ -27,3 +27,7 @@ TODO:
 
 
 <a href="https://fightfascism.neocities.org/"><img src="https://fightfascism.neocities.org/images/fightfascismblack-220xpx.jpg" title="Fight Fascism sticker by Angus Johnston" alt="Fight fascism" width="220" height="37" style="max-width: 100%;"></a>
+
+
+![demo2](assets/aletheia.png)
+![demo3](assets/truth.png)
